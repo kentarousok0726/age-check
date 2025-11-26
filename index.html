@@ -146,18 +146,18 @@
   　　　// キャンセルされたら何もしない
  　　 if (!window.confirm(msg)) return;
 
-  act(cfg.yesText);
-});
+  　　act(cfg.yesText);
+　　　});
 
-// 「私は20歳未満です」用
-noBtn.addEventListener('click', () => {
-  const msg =
+　　　　// 「私は20歳未満です」用
+　　　noBtn.addEventListener('click', () => {
+ 　　 const msg =
     'あなたは未成年でよろしいでしょうか？\n' +
     'お間違いなければ「OK（はい）」を押してください。';
-  if (!window.confirm(msg)) return;
+ 　　 if (!window.confirm(msg)) return;
 
-  act(cfg.noText);
-});
+ 　　 act(cfg.noText);
+　　　});
 
       document.addEventListener('keydown', (e)=>{
         const k = e.key.toLowerCase();
